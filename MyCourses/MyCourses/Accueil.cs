@@ -64,7 +64,10 @@ namespace MyCourses
 
         private void buttonAdmin_Click(object sender, EventArgs e)
         {
-
+            Form l = new Login();
+            
+            this.Close();
+            l.Show();
         }
 
         private void buttonProfesseurs_Click(object sender, EventArgs e)

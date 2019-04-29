@@ -26,7 +26,7 @@ namespace MyCourses
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
         
         private void button3_Click(object sender, EventArgs e)
@@ -59,6 +59,43 @@ namespace MyCourses
         private void label5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Veuillez contacter l'administration.", "Mot de passe oublié?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void textBoxEmail_Enter(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text == "Email")
+            {
+                textBoxEmail.Text = "";
+                textBoxEmail.ForeColor = System.Drawing.ColorTranslator.FromHtml("#262626");
+            }
+        }
+
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text == "")
+            {
+                textBoxEmail.Text = "Email";
+                textBoxEmail.ForeColor = System.Drawing.SystemColors.GrayText;
+            }
+        }
+
+        private void textBoxPassword_Enter(object sender, EventArgs e)
+        {
+
+            if (textBoxPassword.Text == "Mot de passe")
+            {
+                textBoxPassword.Text = "";
+                textBoxPassword.ForeColor = System.Drawing.ColorTranslator.FromHtml("#262626");
+            }
+        }
+
+        private void textBoxPassword_Leave(object sender, EventArgs e)
+        {
+            if (textBoxPassword.Text == "")
+            {
+                textBoxPassword.Text = "Mot de passe";
+                textBoxPassword.ForeColor = System.Drawing.SystemColors.GrayText;
+            }
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
