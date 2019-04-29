@@ -13,6 +13,8 @@ namespace MyCourses
 {
     public partial class Accueil : Form
     {
+        bool click;
+        int movX, movY;
         public Accueil()
         {
             InitializeComponent();
@@ -45,6 +47,59 @@ namespace MyCourses
         {
             panelAcceuil pAcceuil = new panelAcceuil();
             afficherPanel(pAcceuil);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+
+        }
+
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonProfesseurs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEtudiants_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void logo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(click)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void logo_MouseUp(object sender, MouseEventArgs e)
+        {
+            click = false;
+        }
+
+        private void logo_MouseDown(object sender, MouseEventArgs e)
+        {
+            click = true;
+            movY= e.Y;
+            movX= e.X;
         }
     }
 }
