@@ -30,6 +30,8 @@ namespace MyCourses
             DateTime dt = new DateTime();
             dt = System.DateTime.Now;
             labelDate.Text = dt.ToShortDateString();
+            panelEtudiants pEtudiants = new panelEtudiants();
+            afficherPanel(pEtudiants);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -43,11 +45,7 @@ namespace MyCourses
             panelControls.Controls.Clear();
             panelControls.Controls.Add(c);
         }
-        private void buttonAccueil_Click(object sender, EventArgs e)
-        {
-            panelAcceuil pAcceuil = new panelAcceuil();
-            afficherPanel(pAcceuil);
-        }
+   
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -62,13 +60,6 @@ namespace MyCourses
 
         }
 
-        private void buttonAdmin_Click(object sender, EventArgs e)
-        {
-            Form l = new Login();
-            
-            this.Close();
-            l.Show();
-        }
 
         private void buttonProfesseurs_Click(object sender, EventArgs e)
         {
@@ -77,7 +68,8 @@ namespace MyCourses
 
         private void buttonEtudiants_Click(object sender, EventArgs e)
         {
-
+            panelEtudiants pEtudiants = new panelEtudiants();
+            afficherPanel(pEtudiants);
         }
 
         private void buttonMinimize_Click(object sender, EventArgs e)
@@ -96,6 +88,19 @@ namespace MyCourses
         private void logo_MouseUp(object sender, MouseEventArgs e)
         {
             click = false;
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            Form l = new Login();
+
+            this.Close();
+            l.Show();
+        }
+
+        private void buttonAdmin_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void logo_MouseDown(object sender, MouseEventArgs e)

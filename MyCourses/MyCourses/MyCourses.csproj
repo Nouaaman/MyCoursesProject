@@ -52,11 +52,11 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\panelAcceuil.cs">
+    <Compile Include="Controls\panelEtudiants.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\panelAcceuil.Designer.cs">
-      <DependentUpon>panelAcceuil.cs</DependentUpon>
+    <Compile Include="Controls\panelEtudiants.Designer.cs">
+      <DependentUpon>panelEtudiants.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,8 @@
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\panelAcceuil.resx">
-      <DependentUpon>panelAcceuil.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\panelEtudiants.resx">
+      <DependentUpon>panelEtudiants.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

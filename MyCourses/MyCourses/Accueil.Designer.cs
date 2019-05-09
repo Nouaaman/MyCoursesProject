@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonLogOut = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.buttonAdmin = new System.Windows.Forms.Button();
             this.buttonProfesseurs = new System.Windows.Forms.Button();
             this.buttonEtudiants = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAccueil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,12 +48,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelControls = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonLogOut = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -65,7 +64,6 @@
             this.panelMenu.Controls.Add(this.buttonProfesseurs);
             this.panelMenu.Controls.Add(this.buttonEtudiants);
             this.panelMenu.Controls.Add(this.label1);
-            this.panelMenu.Controls.Add(this.buttonAccueil);
             this.panelMenu.Controls.Add(this.pictureBox1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,17 +73,36 @@
             this.panelMenu.Size = new System.Drawing.Size(156, 601);
             this.panelMenu.TabIndex = 0;
             // 
-            // label4
+            // panel3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(18, 103);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "___________________";
+            this.panel3.Controls.Add(this.buttonLogOut);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 509);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(156, 42);
+            this.panel3.TabIndex = 0;
+            // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogOut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonLogOut.FlatAppearance.BorderSize = 0;
+            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogOut.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogOut.ForeColor = System.Drawing.Color.White;
+            this.buttonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOut.Image")));
+            this.buttonLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonLogOut.Location = new System.Drawing.Point(0, 0);
+            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(156, 42);
+            this.buttonLogOut.TabIndex = 2;
+            this.buttonLogOut.Text = "Se deconnecter";
+            this.buttonLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // buttonExit
             // 
@@ -105,6 +122,18 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(18, 103);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 15);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "___________________";
+            // 
             // buttonAdmin
             // 
             this.buttonAdmin.BackColor = System.Drawing.SystemColors.Highlight;
@@ -116,7 +145,7 @@
             this.buttonAdmin.ForeColor = System.Drawing.Color.White;
             this.buttonAdmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdmin.Image")));
             this.buttonAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdmin.Location = new System.Drawing.Point(1, 292);
+            this.buttonAdmin.Location = new System.Drawing.Point(1, 240);
             this.buttonAdmin.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAdmin.Name = "buttonAdmin";
             this.buttonAdmin.Size = new System.Drawing.Size(156, 54);
@@ -137,7 +166,7 @@
             this.buttonProfesseurs.ForeColor = System.Drawing.Color.White;
             this.buttonProfesseurs.Image = ((System.Drawing.Image)(resources.GetObject("buttonProfesseurs.Image")));
             this.buttonProfesseurs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProfesseurs.Location = new System.Drawing.Point(1, 237);
+            this.buttonProfesseurs.Location = new System.Drawing.Point(1, 185);
             this.buttonProfesseurs.Margin = new System.Windows.Forms.Padding(0);
             this.buttonProfesseurs.Name = "buttonProfesseurs";
             this.buttonProfesseurs.Size = new System.Drawing.Size(156, 54);
@@ -158,7 +187,7 @@
             this.buttonEtudiants.ForeColor = System.Drawing.Color.White;
             this.buttonEtudiants.Image = ((System.Drawing.Image)(resources.GetObject("buttonEtudiants.Image")));
             this.buttonEtudiants.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEtudiants.Location = new System.Drawing.Point(1, 182);
+            this.buttonEtudiants.Location = new System.Drawing.Point(1, 130);
             this.buttonEtudiants.Margin = new System.Windows.Forms.Padding(0);
             this.buttonEtudiants.Name = "buttonEtudiants";
             this.buttonEtudiants.Size = new System.Drawing.Size(156, 54);
@@ -178,27 +207,6 @@
             this.label1.Size = new System.Drawing.Size(105, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "My Courses";
-            // 
-            // buttonAccueil
-            // 
-            this.buttonAccueil.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonAccueil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonAccueil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAccueil.FlatAppearance.BorderSize = 0;
-            this.buttonAccueil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAccueil.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAccueil.ForeColor = System.Drawing.Color.White;
-            this.buttonAccueil.Image = ((System.Drawing.Image)(resources.GetObject("buttonAccueil.Image")));
-            this.buttonAccueil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAccueil.Location = new System.Drawing.Point(1, 127);
-            this.buttonAccueil.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonAccueil.Name = "buttonAccueil";
-            this.buttonAccueil.Size = new System.Drawing.Size(155, 54);
-            this.buttonAccueil.TabIndex = 2;
-            this.buttonAccueil.Text = "Acceuil";
-            this.buttonAccueil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonAccueil.UseVisualStyleBackColor = false;
-            this.buttonAccueil.Click += new System.EventHandler(this.buttonAccueil_Click);
             // 
             // pictureBox1
             // 
@@ -319,42 +327,12 @@
             // 
             // panelControls
             // 
+            this.panelControls.BackColor = System.Drawing.SystemColors.Window;
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControls.Location = new System.Drawing.Point(156, 32);
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(938, 569);
             this.panelControls.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.buttonLogOut);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 509);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(156, 42);
-            this.panel3.TabIndex = 0;
-            // 
-            // buttonLogOut
-            // 
-            this.buttonLogOut.BackColor = System.Drawing.SystemColors.Highlight;
-            this.buttonLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogOut.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonLogOut.FlatAppearance.BorderSize = 0;
-            this.buttonLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogOut.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogOut.ForeColor = System.Drawing.Color.White;
-            this.buttonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOut.Image")));
-            this.buttonLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLogOut.Location = new System.Drawing.Point(0, 0);
-            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(0);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(156, 42);
-            this.buttonLogOut.TabIndex = 2;
-            this.buttonLogOut.Text = "Se deconnecter";
-            this.buttonLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLogOut.UseVisualStyleBackColor = false;
-            this.buttonLogOut.Click += new System.EventHandler(this.buttonAdmin_Click);
             // 
             // Accueil
             // 
@@ -375,10 +353,10 @@
             this.Load += new System.EventHandler(this.Accueil_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -393,7 +371,6 @@
         private System.Windows.Forms.Label labelusername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelDate;
-        private System.Windows.Forms.Button buttonAccueil;
         private System.Windows.Forms.Button buttonAdmin;
         private System.Windows.Forms.Button buttonProfesseurs;
         private System.Windows.Forms.Button buttonEtudiants;
