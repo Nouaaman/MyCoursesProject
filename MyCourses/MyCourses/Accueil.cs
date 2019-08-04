@@ -61,12 +61,13 @@ namespace MyCourses
         }
 
 
-        private void buttonProfesseurs_Click(object sender, EventArgs e)
+        private void buttonProfesseurs_Click(object sender, EventArgs e)//afficher panel etudiant
         {
-
+            panelProfesseurs p = new panelProfesseurs();
+            afficherPanel(p);
         }
 
-        private void buttonEtudiants_Click(object sender, EventArgs e)
+        private void buttonEtudiants_Click(object sender, EventArgs e)//afficher panel professeurs
         {
             panelEtudiants pEtudiants = new panelEtudiants();
             afficherPanel(pEtudiants);
