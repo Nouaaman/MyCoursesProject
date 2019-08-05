@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(panelEtudiants));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,6 +50,7 @@
             this.comboBoxAnnee = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -62,15 +63,14 @@
             this.textBoxRechercheNom = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ListeEtudiants = new System.Windows.Forms.DataGridView();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -363,13 +363,28 @@
             this.tableLayoutPanel3.TabIndex = 0;
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel3_Paint);
             // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button6.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(28, 109);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(147, 20);
+            this.button6.TabIndex = 0;
+            this.button6.Text = "Supprimer";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(28, 3);
             this.button1.Name = "button1";
@@ -384,7 +399,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(28, 29);
             this.button2.Name = "button2";
@@ -399,7 +414,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.Highlight;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(28, 55);
             this.button3.Name = "button3";
@@ -414,7 +429,7 @@
             this.button5.BackColor = System.Drawing.SystemColors.Highlight;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(28, 81);
             this.button5.Name = "button5";
@@ -446,7 +461,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.64731F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.80693F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.26666F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel4.Controls.Add(this.labelTotal, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.textBoxRechercheEmail, 3, 1);
             this.tableLayoutPanel4.Controls.Add(this.textBoxRecherchePrenom, 2, 1);
@@ -483,9 +498,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRechercheEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRechercheEmail.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxRechercheEmail.Location = new System.Drawing.Point(462, 23);
+            this.textBoxRechercheEmail.Location = new System.Drawing.Point(459, 23);
             this.textBoxRechercheEmail.Name = "textBoxRechercheEmail";
-            this.textBoxRechercheEmail.Size = new System.Drawing.Size(213, 25);
+            this.textBoxRechercheEmail.Size = new System.Drawing.Size(212, 25);
             this.textBoxRechercheEmail.TabIndex = 1;
             this.textBoxRechercheEmail.Text = "Email";
             this.textBoxRechercheEmail.Enter += new System.EventHandler(this.textBoxRechercheEmail_Enter);
@@ -498,9 +513,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRecherchePrenom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRecherchePrenom.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxRecherchePrenom.Location = new System.Drawing.Point(294, 23);
+            this.textBoxRecherchePrenom.Location = new System.Drawing.Point(292, 23);
             this.textBoxRecherchePrenom.Name = "textBoxRecherchePrenom";
-            this.textBoxRecherchePrenom.Size = new System.Drawing.Size(162, 25);
+            this.textBoxRecherchePrenom.Size = new System.Drawing.Size(161, 25);
             this.textBoxRecherchePrenom.TabIndex = 1;
             this.textBoxRecherchePrenom.Text = "Prenom";
             this.textBoxRecherchePrenom.Enter += new System.EventHandler(this.textBoxRecherchePrenom_Enter);
@@ -513,9 +528,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRechercheNom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRechercheNom.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxRechercheNom.Location = new System.Drawing.Point(127, 23);
+            this.textBoxRechercheNom.Location = new System.Drawing.Point(126, 23);
             this.textBoxRechercheNom.Name = "textBoxRechercheNom";
-            this.textBoxRechercheNom.Size = new System.Drawing.Size(161, 25);
+            this.textBoxRechercheNom.Size = new System.Drawing.Size(160, 25);
             this.textBoxRechercheNom.TabIndex = 1;
             this.textBoxRechercheNom.Text = "Nom";
             this.textBoxRechercheNom.Enter += new System.EventHandler(this.textBoxRechercheNom_Enter);
@@ -527,78 +542,32 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 20);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 23);
+            this.label8.Margin = new System.Windows.Forms.Padding(3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 20);
+            this.label8.Size = new System.Drawing.Size(117, 14);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Recherche par";
+            this.label8.Text = "Recherche:";
             // 
             // button4
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(32)))), ((int)(((byte)(13)))));
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(687, 23);
+            this.button4.Location = new System.Drawing.Point(677, 23);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(13, 13);
+            this.button4.Size = new System.Drawing.Size(30, 14);
             this.button4.TabIndex = 3;
             this.button4.Text = "X";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // Column7
-            // 
-            this.Column7.FillWeight = 57.44501F;
-            this.Column7.HeaderText = "Année";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 57.44501F;
-            this.Column6.HeaderText = "Filière";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 57.44501F;
-            this.Column5.HeaderText = "Mot de passe";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 57.44501F;
-            this.Column4.HeaderText = "Email";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 57.44501F;
-            this.Column3.HeaderText = "Prenom";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 57.44501F;
-            this.Column2.HeaderText = "Nom";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 57.44501F;
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // ListeEtudiants
             // 
@@ -619,14 +588,14 @@
             this.Column6,
             this.Column7});
             this.tableLayoutPanel4.SetColumnSpan(this.ListeEtudiants, 5);
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ListeEtudiants.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ListeEtudiants.DefaultCellStyle = dataGridViewCellStyle1;
             this.ListeEtudiants.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListeEtudiants.GridColor = System.Drawing.Color.LightBlue;
             this.ListeEtudiants.Location = new System.Drawing.Point(1, 41);
@@ -640,20 +609,54 @@
             this.ListeEtudiants.TabIndex = 4;
             this.ListeEtudiants.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListeEtudiants_CellContentClick);
             // 
-            // button6
+            // Column1
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(28, 109);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(147, 20);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Supprimer";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Column1.FillWeight = 57.44501F;
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 57.44501F;
+            this.Column2.HeaderText = "Nom";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 57.44501F;
+            this.Column3.HeaderText = "Prenom";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 57.44501F;
+            this.Column4.HeaderText = "Email";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 57.44501F;
+            this.Column5.HeaderText = "Mot de passe";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 57.44501F;
+            this.Column6.HeaderText = "Filière";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.FillWeight = 57.44501F;
+            this.Column7.HeaderText = "Année";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // panelEtudiants
             // 

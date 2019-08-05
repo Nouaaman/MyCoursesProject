@@ -61,14 +61,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.textBoxPrenom = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxMdp = new System.Windows.Forms.TextBox();
             this.pictureBoxShowMdp = new System.Windows.Forms.PictureBox();
-            this.comboBoxFiliere = new System.Windows.Forms.ComboBox();
             this.comboBoxAnnee = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3.SuspendLayout();
@@ -95,7 +93,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.Highlight;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(28, 29);
             this.button2.Name = "button2";
@@ -110,7 +108,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.Highlight;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(28, 55);
             this.button3.Name = "button3";
@@ -125,7 +123,7 @@
             this.button5.BackColor = System.Drawing.SystemColors.Highlight;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(28, 81);
             this.button5.Name = "button5";
@@ -157,7 +155,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.64731F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.80693F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.26666F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel4.Controls.Add(this.labelTotal, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.textBoxRechercheEmail, 3, 1);
             this.tableLayoutPanel4.Controls.Add(this.textBoxRecherchePrenom, 2, 1);
@@ -194,9 +192,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRechercheEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRechercheEmail.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxRechercheEmail.Location = new System.Drawing.Point(462, 23);
+            this.textBoxRechercheEmail.Location = new System.Drawing.Point(456, 23);
             this.textBoxRechercheEmail.Name = "textBoxRechercheEmail";
-            this.textBoxRechercheEmail.Size = new System.Drawing.Size(213, 25);
+            this.textBoxRechercheEmail.Size = new System.Drawing.Size(210, 25);
             this.textBoxRechercheEmail.TabIndex = 1;
             this.textBoxRechercheEmail.Text = "Email";
             // 
@@ -207,9 +205,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRecherchePrenom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRecherchePrenom.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxRecherchePrenom.Location = new System.Drawing.Point(294, 23);
+            this.textBoxRecherchePrenom.Location = new System.Drawing.Point(290, 23);
             this.textBoxRecherchePrenom.Name = "textBoxRecherchePrenom";
-            this.textBoxRecherchePrenom.Size = new System.Drawing.Size(162, 25);
+            this.textBoxRecherchePrenom.Size = new System.Drawing.Size(160, 25);
             this.textBoxRecherchePrenom.TabIndex = 1;
             this.textBoxRecherchePrenom.Text = "Prenom";
             // 
@@ -220,9 +218,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxRechercheNom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxRechercheNom.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBoxRechercheNom.Location = new System.Drawing.Point(127, 23);
+            this.textBoxRechercheNom.Location = new System.Drawing.Point(125, 23);
             this.textBoxRechercheNom.Name = "textBoxRechercheNom";
-            this.textBoxRechercheNom.Size = new System.Drawing.Size(161, 25);
+            this.textBoxRechercheNom.Size = new System.Drawing.Size(159, 25);
             this.textBoxRechercheNom.TabIndex = 1;
             this.textBoxRechercheNom.Text = "Nom";
             // 
@@ -232,25 +230,28 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 20);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 23);
+            this.label8.Margin = new System.Windows.Forms.Padding(3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 20);
+            this.label8.Size = new System.Drawing.Size(116, 14);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Recherche par";
+            this.label8.Text = "Recherche:";
             // 
             // button4
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(32)))), ((int)(((byte)(13)))));
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(687, 23);
+            this.button4.Location = new System.Drawing.Point(672, 23);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(13, 13);
+            this.button4.Size = new System.Drawing.Size(35, 14);
             this.button4.TabIndex = 3;
             this.button4.Text = "X";
             this.button4.UseVisualStyleBackColor = false;
@@ -342,7 +343,7 @@
             this.button6.BackColor = System.Drawing.SystemColors.Highlight;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(28, 109);
             this.button6.Name = "button6";
@@ -357,7 +358,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(28, 3);
             this.button1.Name = "button1";
@@ -428,14 +429,12 @@
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.textBoxID, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBoxNom, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.textBoxPrenom, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.textBoxEmail, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.textBoxMdp, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.pictureBoxShowMdp, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.comboBoxFiliere, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.comboBoxAnnee, 1, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
@@ -523,18 +522,6 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Filière";
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(8, 152);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Année";
-            // 
             // textBoxID
             // 
             this.textBoxID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -607,19 +594,6 @@
             this.pictureBoxShowMdp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxShowMdp.TabIndex = 1;
             this.pictureBoxShowMdp.TabStop = false;
-            // 
-            // comboBoxFiliere
-            // 
-            this.comboBoxFiliere.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxFiliere.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxFiliere.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.comboBoxFiliere.FormattingEnabled = true;
-            this.comboBoxFiliere.Location = new System.Drawing.Point(55, 147);
-            this.comboBoxFiliere.Name = "comboBoxFiliere";
-            this.comboBoxFiliere.Size = new System.Drawing.Size(128, 25);
-            this.comboBoxFiliere.TabIndex = 4;
             // 
             // comboBoxAnnee
             // 
@@ -698,14 +672,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.TextBox textBoxPrenom;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxMdp;
         private System.Windows.Forms.PictureBox pictureBoxShowMdp;
-        private System.Windows.Forms.ComboBox comboBoxFiliere;
         private System.Windows.Forms.ComboBox comboBoxAnnee;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;

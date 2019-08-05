@@ -65,12 +65,15 @@ namespace MyCourses
         {
             panelProfesseurs p = new panelProfesseurs();
             afficherPanel(p);
+            labelTitreFenetre.Text = "Gestion des professeurs";
         }
 
         private void buttonEtudiants_Click(object sender, EventArgs e)//afficher panel professeurs
         {
+            
             panelEtudiants pEtudiants = new panelEtudiants();
             afficherPanel(pEtudiants);
+            labelTitreFenetre.Text = "Gestion des étudiants";
         }
 
         private void buttonMinimize_Click(object sender, EventArgs e)

@@ -28,7 +28,7 @@ CREATE TABLE Etudiant(
 	MotDePasse varchar(100) not null,
 	Filiere int foreign key references Filiere(Id) not null,
 	Annee int foreign key references Annee(Id) not null,
-	DerniereConnexion datetime 
+
 )
 
 go
@@ -39,7 +39,7 @@ CREATE TABLE Professeur(
 	Email varchar(max) not null,
 	MotDePasse varchar(100) not null,
 	Filiere int foreign key references Filiere(Id) not null,
-	DerniereConnexion datetime 
+
 )
 
 go

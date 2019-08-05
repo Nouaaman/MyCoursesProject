@@ -124,6 +124,7 @@
             resources.ApplyResources(this.labelError, "labelError");
             this.labelError.ForeColor = System.Drawing.Color.Crimson;
             this.labelError.Name = "labelError";
+
             // 
             // label4
             // 

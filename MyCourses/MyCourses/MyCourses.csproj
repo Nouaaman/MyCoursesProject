@@ -65,6 +65,12 @@
     <Compile Include="Controls\panelProfesseurs.Designer.cs">
       <DependentUpon>panelProfesseurs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Demarrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demarrage.Designer.cs">
+      <DependentUpon>Demarrage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\panelProfesseurs.resx">
       <DependentUpon>panelProfesseurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demarrage.resx">
+      <DependentUpon>Demarrage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

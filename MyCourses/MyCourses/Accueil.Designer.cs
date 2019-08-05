@@ -40,11 +40,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTitreFenetre = new System.Windows.Forms.Label();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonMaximize = new System.Windows.Forms.Button();
             this.labelDate = new System.Windows.Forms.Label();
-            this.labelusername = new System.Windows.Forms.Label();
+            this.labelNomUtilisateur = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelControls = new System.Windows.Forms.Panel();
@@ -127,7 +127,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(18, 103);
+            this.label4.Location = new System.Drawing.Point(18, 166);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 15);
@@ -145,7 +145,7 @@
             this.buttonAdmin.ForeColor = System.Drawing.Color.White;
             this.buttonAdmin.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdmin.Image")));
             this.buttonAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAdmin.Location = new System.Drawing.Point(1, 240);
+            this.buttonAdmin.Location = new System.Drawing.Point(1, 298);
             this.buttonAdmin.Margin = new System.Windows.Forms.Padding(0);
             this.buttonAdmin.Name = "buttonAdmin";
             this.buttonAdmin.Size = new System.Drawing.Size(156, 54);
@@ -166,7 +166,7 @@
             this.buttonProfesseurs.ForeColor = System.Drawing.Color.White;
             this.buttonProfesseurs.Image = ((System.Drawing.Image)(resources.GetObject("buttonProfesseurs.Image")));
             this.buttonProfesseurs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProfesseurs.Location = new System.Drawing.Point(1, 185);
+            this.buttonProfesseurs.Location = new System.Drawing.Point(1, 243);
             this.buttonProfesseurs.Margin = new System.Windows.Forms.Padding(0);
             this.buttonProfesseurs.Name = "buttonProfesseurs";
             this.buttonProfesseurs.Size = new System.Drawing.Size(156, 54);
@@ -187,7 +187,7 @@
             this.buttonEtudiants.ForeColor = System.Drawing.Color.White;
             this.buttonEtudiants.Image = ((System.Drawing.Image)(resources.GetObject("buttonEtudiants.Image")));
             this.buttonEtudiants.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonEtudiants.Location = new System.Drawing.Point(1, 130);
+            this.buttonEtudiants.Location = new System.Drawing.Point(1, 188);
             this.buttonEtudiants.Margin = new System.Windows.Forms.Padding(0);
             this.buttonEtudiants.Name = "buttonEtudiants";
             this.buttonEtudiants.Size = new System.Drawing.Size(156, 54);
@@ -202,7 +202,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(26, 84);
+            this.label1.Location = new System.Drawing.Point(26, 147);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 19);
             this.label1.TabIndex = 2;
@@ -210,12 +210,13 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 138);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -226,11 +227,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.labelTitreFenetre);
             this.panel1.Controls.Add(this.buttonMinimize);
             this.panel1.Controls.Add(this.buttonMaximize);
             this.panel1.Controls.Add(this.labelDate);
-            this.panel1.Controls.Add(this.labelusername);
+            this.panel1.Controls.Add(this.labelNomUtilisateur);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -239,17 +240,19 @@
             this.panel1.Size = new System.Drawing.Size(938, 32);
             this.panel1.TabIndex = 1;
             // 
-            // label2
+            // labelTitreFenetre
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(3, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Gestion d\'utilisateurs";
+            this.labelTitreFenetre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelTitreFenetre.AutoSize = true;
+            this.labelTitreFenetre.BackColor = System.Drawing.Color.Transparent;
+            this.labelTitreFenetre.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitreFenetre.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelTitreFenetre.Location = new System.Drawing.Point(3, 5);
+            this.labelTitreFenetre.Name = "labelTitreFenetre";
+            this.labelTitreFenetre.Size = new System.Drawing.Size(178, 21);
+            this.labelTitreFenetre.TabIndex = 0;
+            this.labelTitreFenetre.Text = "Gestion des étudiants";
             // 
             // buttonMinimize
             // 
@@ -287,32 +290,40 @@
             // 
             // labelDate
             // 
+            this.labelDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDate.AutoSize = true;
-            this.labelDate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDate.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelDate.Location = new System.Drawing.Point(758, 7);
+            this.labelDate.Location = new System.Drawing.Point(758, 6);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(98, 18);
             this.labelDate.TabIndex = 3;
             this.labelDate.Text = "jj/mm/aaaa";
             // 
-            // labelusername
+            // labelNomUtilisateur
             // 
-            this.labelusername.AutoSize = true;
-            this.labelusername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelusername.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelusername.Location = new System.Drawing.Point(480, 6);
-            this.labelusername.Name = "labelusername";
-            this.labelusername.Size = new System.Drawing.Size(92, 21);
-            this.labelusername.TabIndex = 2;
-            this.labelusername.Text = "Ahmed Ali";
+            this.labelNomUtilisateur.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelNomUtilisateur.AutoSize = true;
+            this.labelNomUtilisateur.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomUtilisateur.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelNomUtilisateur.Location = new System.Drawing.Point(480, 5);
+            this.labelNomUtilisateur.Name = "labelNomUtilisateur";
+            this.labelNomUtilisateur.Size = new System.Drawing.Size(92, 21);
+            this.labelNomUtilisateur.TabIndex = 2;
+            this.labelNomUtilisateur.Text = "Ahmed Ali";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(376, 7);
+            this.label3.Location = new System.Drawing.Point(376, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 18);
             this.label3.TabIndex = 2;
@@ -366,9 +377,9 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTitreFenetre;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label labelusername;
+        private System.Windows.Forms.Label labelNomUtilisateur;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Button buttonAdmin;

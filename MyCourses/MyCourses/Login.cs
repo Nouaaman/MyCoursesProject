@@ -95,6 +95,8 @@ namespace MyCourses
             }
         }
 
+      
+
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
             click = false;
